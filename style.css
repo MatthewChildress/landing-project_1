@@ -14,7 +14,7 @@ html, body, #wrapper {
 /*flex-grow:1 means everything in selector grows at same rate.
 This is in <main> so it'll target everything within. */
 .page-main {
-    flex-grow:1;
+    flex:auto;
 }
 
 body{
@@ -128,6 +128,7 @@ main {
     background-color:#3882f6;
     color:white;
     border-radius:16px;
+    font-size:18px;
     padding:8px;
     padding-left:10px;
     padding-right:10px;
@@ -224,19 +225,22 @@ main {
 
 }
 .call-box{
-display:flex;
-    justify-content:flex;
+    display:flex;
     align-items: center;
-    margin: 128px 72px 72px;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    margin-top: 128px;
+    margin-bottom:72px;
     gap: 24px;
     padding: 32px;
-    border: 3px solid #3882f6;
-    border-radius: 100px;
+    border: 3px solid rgb(31,45,55);
+    border-radius: 50px;
     background-color:#3882f6;
 }
 
 .call-text h3{
-    font-size:24px;
+    font-size:48px;
     font-style:bold;
     color:#f9faf8;
 
@@ -248,15 +252,31 @@ display:flex;
 
 }
 
+.call-item{
+    display:flex;
+    justify-content: space-between;
+}
+
+.call-text{
+    display:flex;
+    flex-direction:column;
+    margin-right:20%;
+}
+
 .call-button{
-    background-color:#3882f6;
+    display:flex;
+    justify-content:right;
+    align-items:flex-end;
+    background-color:rgb(31,45,55);
     color:white;
+    font-size:18px;
     border:8px;
     border-color:white;
     border-radius:16px;
     padding:8px;
     padding-left:10px;
     padding-right:10px;
+    
 }
 
 /*direction is column-reverse in case I add social media links*/
@@ -271,7 +291,7 @@ footer{
     display:flex;
     justify-content:center;
     align-items: center;
-    padding-top:16px;
+    padding:8px;
 
 }
 
