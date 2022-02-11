@@ -10,10 +10,6 @@ html, body, #wrapper {
     flex-direction:column;
     min-height: 100vh;
 }
-/* > targets child selector '*' targets all so 'all child selectors' */
-.container > * {
-    padding: 20px;
-}
 
 /*flex-grow:1 means everything in selector grows at same rate.
 This is in <main> so it'll target everything within. */
@@ -60,27 +56,11 @@ a{
     border-radius:45px;
 }
 
-/*this media changes the list to shift under logo if resolution is too small on mobile*/
-@media screen and (min-width: 550px) {
-    .header ul {
-        width:auto;
-        margin-top:0;
-    }
-}
-
 main {
     display:flex;
     flex-direction: column;
     justify-content:center;
     min-height: 350px;
-}
-
-
-/*this media changes main to fit within mobile resolutions*/
-@media screen and (min-width:768px) {
-    main {
-        padding-left:90px;
-    }
 }
 
 /*Added in code from original page as this section was correct there. ref: repo landing_project*/
@@ -222,18 +202,14 @@ footer{
     display:flex;
     flex-direction:column-reverse;
     background-color:rgb(31,45,55);
+    color:#F9FAF8;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 
 }
-/*changes footer placement on mobile if resolution is too small*/
-@media screen and (min-width: 500px) {
-    footer {
-        color:#F9FAF8;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items:center;
-        display:flex;
-        justify-content:center;
-        align-items: center;
-    }
-}
+
 
