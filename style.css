@@ -31,7 +31,6 @@ nav {
     justify-content:space-around;
     padding-bottom:16px;
 
-
 }
 
 .nav-logo{
@@ -66,7 +65,8 @@ a{
 }
 
 .lolly{
-    border-radius:45px;
+    border-radius:50%;
+    border: 3px solid #3882f6;
     margin-top:8px;
 }
 
@@ -86,7 +86,21 @@ main {
 .hero{
     background-color:rgb(31,45,55);
     display:flex;
-    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-box {
+    display:flex;
+    justify-content:flex;
+    align-items: center;
+    margin: 128px 72px 72px;
+    gap: 24px;
+    padding: 32px;
+    border: 3px solid #3882f6;
+    border-radius: 100px;
+    box-shadow: 2px 2px 20px 2px;
+    background: rgba(57, 60, 90, 0.7);
 }
 
 .hero-text {
@@ -94,12 +108,14 @@ main {
     align-self: flex-start;
     flex-direction:column;
     flex-wrap: wrap;
+    margin-left:16px;
 }
 
 .hero-text h2 {
     font-size: 48px;
     font-style:bolder;
     color:#f9faf8;
+    margin-bottom: 0px;
 }
 
 .hero-text p {
@@ -112,6 +128,21 @@ main {
     background-color:#3882f6;
     color:white;
     border-radius:16px;
+    padding:8px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.fox {
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    margin-right:16px;
+    border-radius:54px;
+    border: 3px solid #3882f6;
+    box-shadow: 2px 2px 20px 2px;
 }
 
 .info{
@@ -119,6 +150,8 @@ main {
     flex-direction:column;
     justify-content:center;
     flex-wrap:wrap;
+    border-top: 3px solid #3882f6;
+    border-bottom: 3px solid #3882f6;
 }
 
 .info-title {
@@ -186,8 +219,20 @@ main {
 }
 
 .call{
+    border-top: 3px solid #3882f6;
+    border-bottom: 3px solid #3882f6;
 
-
+}
+.call-box{
+display:flex;
+    justify-content:flex;
+    align-items: center;
+    margin: 128px 72px 72px;
+    gap: 24px;
+    padding: 32px;
+    border: 3px solid #3882f6;
+    border-radius: 100px;
+    background-color:#3882f6;
 }
 
 .call-text h3{
@@ -209,6 +254,9 @@ main {
     border:8px;
     border-color:white;
     border-radius:16px;
+    padding:8px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 /*direction is column-reverse in case I add social media links*/
