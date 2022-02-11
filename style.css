@@ -17,23 +17,36 @@ This is in <main> so it'll target everything within. */
     flex-grow:1;
 }
 
-body {
+body{
     font-family:Roboto, sans-serif;
     display:flex;
     flex-direction:column;
     margin:0;
 }
 
-header{
+nav {
     background-color:rgb(31,45,55);
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-bottom:16px;
+
 
 }
 
-.header nav{
+.nav-logo{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
     align-items:center;
+    justify-content:center;
+}
+
+.nav-links{
+    font-size:18px;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .header ul {
@@ -54,6 +67,7 @@ a{
 
 .lolly{
     border-radius:45px;
+    margin-top:8px;
 }
 
 main {
@@ -209,6 +223,7 @@ footer{
     display:flex;
     justify-content:center;
     align-items: center;
+    padding-top:16px;
 
 }
 
