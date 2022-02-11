@@ -78,7 +78,7 @@ main {
 }
 
 /*Added in code from original page as this section was correct there. ref: repo landing_project*/
-.boxhero{
+.hero{
     background-color:rgb(31,45,55);
     display:flex;
     flex-direction:row;
@@ -103,7 +103,7 @@ main {
     margin-bottom:16px;
 }
 
-.boxinfo{
+.info{
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -147,7 +147,7 @@ main {
 
 }
 
-.boxquote{
+.quote{
     background-color:#E5E7EB;
     display:flex;
     flex-direction:column;
@@ -176,14 +176,15 @@ main {
     font-size:24px;
 }
 
-.boxcall{
-    font-size:24px;
-    font-style:bold;
-    color:#f9faf8;
+.call{
+
 
 }
 
 .call-text h3{
+    font-size:24px;
+    font-style:bold;
+    color:#f9faf8;
 
 }
 
