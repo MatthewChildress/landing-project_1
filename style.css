@@ -84,20 +84,20 @@ main {
     flex-direction:row;
 }
 
-.hero-main {
+.hero-text {
     display:flex;
     align-self: flex-start;
     flex-direction:column;
     flex-wrap: wrap;
 }
 
-.hero1 {
+.hero-text h2 {
     font-size: 48px;
     font-style:bolder;
     color:#f9faf8;
 }
 
-.hero2 {
+.hero-text p {
     font-size: 18px;
     color:#E5E7EB;
     margin-bottom:16px;
@@ -177,8 +177,22 @@ main {
 }
 
 .boxcall{
+    font-size:24px;
+    font-style:bold;
+    color:#f9faf8;
 
 }
+
+.call-text h3{
+
+}
+
+.call-text p{
+    font-size:18px;
+    color:#E5E7EB;
+
+}
+
 /*direction is column-reverse in case I add social media links*/
 footer{
     display:flex;
