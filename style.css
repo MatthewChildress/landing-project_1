@@ -5,11 +5,13 @@
     flex-direction:column;
     min-height: 100vh;
 }
-
+/* > targets child selector '*' targets all so 'all child selectors' */
 .container > * {
     padding: 20px;
 }
 
+/*flex-grow:1 means everything in selector grows at same rate.
+This is in <main> so it'll target everything within. */
 .page-main {
     flex-grow:1;
 }
@@ -17,6 +19,7 @@
 body {
     display:flex;
     flex-direction:column;
+    margin:0;
 }
 
 header{
@@ -47,7 +50,11 @@ a{
     color:#F9FAF8;
 }
 
+.lolly{
+    border-radius:45px;
+}
 
+/*this media changes the list to shift under logo if resolution is too small on mobile*/
 @media screen and (min-width: 550px) {
     .header ul {
         width:auto;
@@ -62,14 +69,24 @@ main {
     min-height: 350px;
 }
 
-main div {
-    max-width:500px;
-}
 
+/*this media changes main to fit within mobile resolutions*/
 @media screen and (min-width:768px) {
     main {
         padding-left:90px;
     }
+}
+
+.hero1 {
+    font-size: 48px;
+    font-style:bolder;
+    color:#f9faf8;
+}
+
+.hero2 {
+    font-size: 18px;
+    color:#E5E7EB;
+    margin-bottom:16px;
 }
 
 .boxhero{
@@ -91,14 +108,14 @@ main div {
 .boxcall{
 
 }
-
+/*direction is column-reverse in case I add social media links*/
 footer{
     display:flex;
     flex-direction:column-reverse;
     background-color:rgb(31,45,55);
 
 }
-
+/*changes footer placement on mobile if resolution is too small*/
 @media screen and (min-width: 500px) {
     footer {
         color:#F9FAF8;
