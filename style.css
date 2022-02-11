@@ -149,7 +149,31 @@ main {
 
 .boxquote{
     background-color:#E5E7EB;
+    display:flex;
+    flex-direction:column;
 
+}
+/*margins are in percentages to align the text block roughly in center of page*/
+.quote {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:50%;
+    font-size: 36px;
+    font-style:italic;
+    margin-left:25%;
+    margin-right:25%;
+
+}
+
+.quote1 {
+    display:flex;
+    align-self:flex-end;
+    margin-left:25%;
+    margin-right:25%;
+    font-style:bolder;
+    font-size:24px;
 }
 
 .boxcall{
